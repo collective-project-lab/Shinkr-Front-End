@@ -4,7 +4,7 @@ export interface ShortenResponse {
 }
 
 export async function createShortUrl(longUrl: string): Promise<ShortenResponse> {
-  const response = await fetch('http://localhost:8000/api/urls/', {
+  const response = await fetch('https://faresedris123.pythonanywhere.com/api/urls/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
