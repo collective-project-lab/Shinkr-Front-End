@@ -1,4 +1,4 @@
-import React, { type PropsWithChildren } from 'react';
+import { type PropsWithChildren } from 'react';
 
 const PageWrapper = ({ children }: PropsWithChildren) => (
   <main className="page-wrapper">{children}</main>

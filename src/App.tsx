@@ -10,7 +10,7 @@ import ShortenerSection from './components/sections/ShortenerSection'
 function App() {
   const [longUrl, setLongUrl] = useState('')
   const [shortUrl, setShortUrl] = useState('')
-  const [shortCode, setShortCode] = useState('')
+  const [, setShortCode] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [message, setMessage] = useState('')
   const [copied, setCopied] = useState(false)
@@ -58,7 +58,6 @@ function App() {
             status={status}
             message={message}
             shortUrl={shortUrl}
-            shortCode={shortCode}
             copied={copied}
             onCopy={handleCopy}
           />

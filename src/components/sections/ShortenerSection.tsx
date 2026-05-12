@@ -7,7 +7,7 @@ interface ShortenerSectionProps {
   status: 'idle' | 'loading' | 'success' | 'error'
   message: string
   shortUrl: string
-  shortCode: string
+
   copied: boolean
   onCopy: () => void
 }
@@ -19,7 +19,7 @@ const ShortenerSection = ({
   status,
   message,
   shortUrl,
-  shortCode,
+
   copied,
   onCopy
 }: ShortenerSectionProps) => {
